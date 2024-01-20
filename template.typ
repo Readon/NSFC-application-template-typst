@@ -61,14 +61,16 @@
     [#counter(heading).display()#it.body]
   }
 
-  // show heading: set text(12pt, weight: "regular")
-  align(center, text(headsize, font: headfont, weight: "bold", [*#title*]))
-  text(headsize, font: headfont, weight: "regular", "参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。")
-  text(headsize, font: headfont, weight: "regular", fill: blue, "请勿删除或改动下述提纲标题及括号中的文字。")
+  let textout(color: black, ..args) = {
+    text(headsize, fill: color, font: headfont, weight: "bold", ..args)
+  }
+
   // show heading: set text(12pt, weight: "regular")  
   v(0.5em)
   par(first-line-indent: 28pt, align(center, textout([*#title*])))
   v(0.4em)
+
+  par(first-line-indent: 28pt, textout("参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。") + textout(color: blue, "请勿删除或改动下述提纲标题及括号中的文字。"))
 
 
   body
