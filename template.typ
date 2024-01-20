@@ -43,7 +43,7 @@
     numbering: "1",
     margin: (bottom: 2.5cm, top: 2.5cm, left: 3cm, right: 3cm),
   )
-  set par(leading: 1.1em, first-line-indent: 24pt, justify: true)
+  set par(leading: 1.3em, first-line-indent: 24pt, justify: true)
   show par: set block(spacing: 1em)
 
   // Configure chapter headings.  
