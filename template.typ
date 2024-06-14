@@ -48,7 +48,7 @@
     numbering: "1",
     margin: (bottom: 2.5cm, top: 2.5cm, left: 3cm, right: 3cm),
   )
-  set par(leading: 1.3em, first-line-indent: 24pt, justify: true)
+  set par(leading: 15.6pt, first-line-indent: 24pt, justify: true)
   show par: set block(spacing: 1em)
 
   // Configure chapter headings.  
@@ -56,28 +56,28 @@
   show heading.where(level: 1): it => {
     set text(headsize, font: headfont, weight: "bold", fill: headcolor)
     set par(first-line-indent: 21pt, justify: true)
-    v(0.18em)
+    v(2.5pt)
     [#counter(heading).display()#it.body]
-    v(0.43em)
+    v(6pt)
   }
   show heading.where(level: 2): it => {
     set text(headsize, font: headfont, weight: "medium", fill: headcolor)
-    set par(leading: 0.9em, first-line-indent: 27.5pt, justify: true)
+    set par(leading: 12.6pt, first-line-indent: 27.5pt, justify: true)
     [#counter(heading).display()#it.body]
-    v(-0.14em)
+    v(-2pt)
   }
 
   {
     set text(headsize, font: headfont)
-    set par(leading: 0.95em, first-line-indent: 28pt, justify: true)
+    set par(leading: 13.3pt, first-line-indent: 28pt, justify: true)
     {
       set text(15.3pt, font: headfont, weight: "bold")
       set align(center)
-      v(0.45em)
+      v(6.9pt)
       [*#title*]
     }
 
-    v(0.1em)
+    v(1.4pt)
     [参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。]
     text(weight: "bold", fill: headcolor, [请勿删除或改动下述提纲标题及括号中的文字。])
   }
