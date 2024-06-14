@@ -70,12 +70,13 @@
     set text(headsize, font: headfont)
     set par(leading: 0.9em, first-line-indent: 28pt, justify: true)
     {
-      set text(16pt, font: headfont, weight: "bold")
+      set text(15.3pt, font: headfont, weight: "bold")
       set align(center)
       v(0.45em)
       [*#title*]
     }
-    
+
+    v(0.1em)
     [参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。]
     text(weight: "bold", fill: headcolor, [请勿删除或改动下述提纲标题及括号中的文字。])
   }
