@@ -1,3 +1,5 @@
+#import "@preview/cuti:0.2.1": show-cn-fakebold
+
 #let custom-numbering(base: 1, depth: 5, first-level: auto, second-level: auto, third-level: auto, format, ..args) = {
   if (args.pos().len() > depth) {
     return
@@ -32,6 +34,8 @@
 #let proposal(
   body,
 ) = {
+  show: show-cn-fakebold
+  
   let title = [报告正文]
   let headsize = 14pt
   let headfont = "KaiTi"
