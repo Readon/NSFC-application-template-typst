@@ -48,20 +48,20 @@
     margin: (bottom: 2.5cm, top: 2.78cm, left: 3cm, right: 3cm),
   )
   set par(leading: 1em, first-line-indent: 2em, justify: true)
-  show par: set block(spacing: 1em)
+  show par: set block(spacing: 1.2em)
 
   // Configure chapter headings.  
   set heading(numbering: custom-numbering.with(base: 2, first-level: "（一）", second-level: "1. ", depth: 5, "1.1"))
   show heading.where(level: 1): it => {
     set text(headsize, font: headfont, weight: "bold", fill: headcolor)
     set par(first-line-indent: 21pt, justify: true)
-    show par: set block(above: 22.2pt, below: 10.2pt)
+    show par: set block(above: 18.2pt, below: 18.4pt)
     [#counter(heading).display()#it.body]
   }
   show heading.where(level: 2): it => {
     set text(headsize, font: headfont, weight: "medium", fill: headcolor)
-    set par(leading: 12.6pt, first-line-indent: 27.5pt, justify: true)    
-    show par: set block(above: 15pt, below: 11.4pt)
+    set par(leading: 12.4pt, first-line-indent: 27.5pt, justify: true)    
+    show par: set block(above: 12.6pt, below: 0.2pt)
     [#counter(heading).display()#it.body]
   }
 
