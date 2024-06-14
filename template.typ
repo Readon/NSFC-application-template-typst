@@ -63,8 +63,9 @@
   show heading.where(level: 2): it => {
     set text(headsize, font: headfont, weight: "medium", fill: headcolor)
     set par(leading: 12.6pt, first-line-indent: 27.5pt, justify: true)
+    v(4pt)
     [#counter(heading).display()#it.body]
-    v(-2pt)
+    v(-6pt)
   }
 
   {
