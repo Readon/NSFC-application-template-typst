@@ -46,7 +46,7 @@
   set page(
     paper: "a4",
     numbering: "1",
-    margin: (bottom: 2.5cm, top: 2.5cm, left: 3cm, right: 3cm),
+    margin: (bottom: 2.5cm, top: 2.78cm, left: 3cm, right: 3cm),
   )
   set par(leading: 15.6pt, first-line-indent: 24pt, justify: true)
   show par: set block(spacing: 1em)
@@ -74,7 +74,7 @@
     {
       set text(15.5pt, font: headfont, weight: "bold")
       set align(center)
-      v(6.9pt)
+      v(-1pt)
       [*#title*]
     }
 
