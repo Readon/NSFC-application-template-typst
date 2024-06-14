@@ -71,7 +71,7 @@
     set text(headsize, font: headfont)
     set par(leading: 13.3pt, first-line-indent: 28pt, justify: true)
     {
-      set text(15.3pt, font: headfont, weight: "bold")
+      set text(15.5pt, font: headfont, weight: "bold")
       set align(center)
       v(6.9pt)
       [*#title*]
