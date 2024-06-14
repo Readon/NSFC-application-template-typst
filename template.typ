@@ -55,20 +55,21 @@
   set heading(numbering: custom-numbering.with(base: 2, first-level: "（一）", second-level: "1. ", depth: 5, "1.1"))
   show heading.where(level: 1): it => {
     set text(headsize, font: headfont, weight: "bold", fill: headcolor)
-    set par(first-line-indent: 22pt, justify: true)
-    v(0.2em)
+    set par(first-line-indent: 21pt, justify: true)
+    v(0.18em)
     [#counter(heading).display()#it.body]
-    v(0.3em)
+    v(0.43em)
   }
   show heading.where(level: 2): it => {
     set text(headsize, font: headfont, weight: "medium", fill: headcolor)
-    set par(leading: 0.9em, first-line-indent: 28pt, justify: true)
+    set par(leading: 0.9em, first-line-indent: 27.5pt, justify: true)
     [#counter(heading).display()#it.body]
+    v(-0.14em)
   }
 
   {
     set text(headsize, font: headfont)
-    set par(leading: 0.9em, first-line-indent: 28pt, justify: true)
+    set par(leading: 0.95em, first-line-indent: 28pt, justify: true)
     {
       set text(15.3pt, font: headfont, weight: "bold")
       set align(center)
