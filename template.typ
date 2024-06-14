@@ -45,7 +45,6 @@
   set text(12pt, font: ("Times New Roman", "SongTi"), lang: "zh", region: "cn")
   set page(
     paper: "a4",
-    numbering: "1",
     margin: (bottom: 2.5cm, top: 2.78cm, left: 3cm, right: 3cm),
   )
   set par(leading: 15.6pt, first-line-indent: 24pt, justify: true)
