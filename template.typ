@@ -1,4 +1,4 @@
-#import "@preview/cuti:0.2.1": show-cn-fakebold
+#import "@preview/cuti:0.2.1": show-cn-fakebold, show-fakebold
 
 #let custom-numbering(base: 1, depth: 5, first-level: auto, second-level: auto, third-level: auto, format, ..args) = {
   if (args.pos().len() > depth) {
@@ -53,6 +53,7 @@
   // Configure chapter headings.  
   set heading(numbering: custom-numbering.with(base: 2, first-level: "（一）", second-level: "1. ", depth: 5, "1.1"))
   show heading.where(level: 1): it => {
+    show: show-fakebold
     set text(headsize, font: headfont, weight: "bold", fill: headcolor)
     set par(first-line-indent: 21pt, justify: true)
     show par: set block(above: 18.2pt, below: 18.4pt)
