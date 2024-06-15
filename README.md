@@ -1,5 +1,8 @@
 # NSFC-application-template-typst
 Typst自然科学基金申报书模板-非官方
 
+Typst速度快，易于检查，语法简单效率高。
+有问题可以先查阅(Typst中文用户指南)[https://typst-doc-cn.github.io/docs/chinese/]。
+
 ## 问题
-当前Typst并不支持中文的字体加粗功能，因此，现阶段该模板还不可用。
+基本排版问题不大。欢迎提issue。
