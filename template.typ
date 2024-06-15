@@ -83,6 +83,6 @@
 
   set text(11.8pt, font: ("Times New Roman", "SongTi"), lang: "zh", region: "cn")
   set par(leading: 14.5pt, first-line-indent: 24pt, justify: true)
-  show par: set block(spacing: 1em, above: 13.4pt)
+  show par: set block(spacing: 1em, above: 14.2pt)
   body
 }
