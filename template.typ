@@ -1,4 +1,4 @@
-#import "@preview/cuti:0.2.1": show-cn-fakebold, show-fakebold
+#import "@preview/cuti:0.3.0": show-cn-fakebold, show-fakebold
 
 #let custom-numbering(base: 1, depth: 5, first-level: auto, second-level: auto, third-level: auto, format, ..args) = {
   if (args.pos().len() > depth) {
